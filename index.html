@@ -2,12 +2,10 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=0.9">
-<title>Achadinhos Inteligentes para Casa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Achadinhos Inteligentes</title>
 
-<!-- ===== META PIXEL ===== -->
-<script> 
-   <!-- Meta Pixel Code -->
+<!-- META PIXEL -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -20,68 +18,94 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '1392662802612883');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1392662802612883&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+
 <style>
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
+  font-family: 'Segoe UI', sans-serif;
   background-color: #f5f5f5;
 }
 
 header {
   background: #111;
   color: white;
-  padding: 35px 20px;
+  padding: 25px;
   text-align: center;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 28px;
+nav {
+  background: #222;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #ff6600;
 }
 
 .container {
-  padding: 20px;
-  max-width: 1000px;
-  margin: auto;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
-.product {
-  background: white;
-  padding: 20px;
+.section-title {
   margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  display: flex;
-  flex-direction: column;
+  font-size: 22px;
+  border-left: 4px solid #ff6600;
+  padding-left: 10px;
 }
 
-.product img {
-  max-width: 100%;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
   border-radius: 8px;
 }
 
-.product h2 {
-  font-size: 20px;
+.card h3 {
+  font-size: 16px;
+  margin: 10px 0;
 }
 
-.product p {
+.card p {
+  font-size: 14px;
   color: #555;
 }
 
 .btn {
-  display: inline-block;
+  display: block;
   background: #ff6600;
   color: white;
-  padding: 12px 20px;
-  text-decoration: none;
-  border-radius: 8px;
-  margin-top: 10px;
-  font-weight: bold;
   text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .btn:hover {
@@ -89,10 +113,12 @@ header h1 {
 }
 
 footer {
+  background: #111;
+  color: white;
   text-align: center;
   padding: 20px;
-  font-size: 12px;
-  color: #777;
+  margin-top: 40px;
+  font-size: 13px;
 }
 </style>
 </head>
@@ -100,43 +126,64 @@ footer {
 <body>
 
 <header>
-  <h1>🏠🛒 Produtos Inteligentes que Facilitam sua Rotina</h1>
-  <p>Selecionamos os melhores achadinhos que realmente valem a pena</p>
+  <h1>🛒 Achadinhos Inteligentes</h1>
+  <p>Produtos selecionados que realmente valem a pena</p>
 </header>
+
+<nav>
+  <a href="#casa">Casa</a>
+  <a href="#utilidades">Utilidades</a>
+  <a href="#beleza">Beleza</a>
+  <a href="#pets">Pets</a>
+  <a href="#tecnologia">Tecnologia</a>
+</nav>
 
 <div class="container">
 
-  <!-- PRODUTO 1 -->
-  <div class="product">
-    <img src="mop.jpg.jpeg" alt="Produto 1">
-    <h2>Mop giratorio com cabo de 140cm cesto em inox</h2>
-    <p>Limpeza prática, rápida e sem esforço para o seu dia a dia.</p>
-    <a href="https://br.shp.ee/pbvcwn2?smtt=0.0.9" target="_blank" class="btn">Ver na Shopee</a>
+  <!-- CASA -->
+  <div id="casa">
+    <h2 class="section-title">🏠 Casa</h2>
+    <div class="grid">
+
+      <div class="card">
+        <img src="mop.jpg.jpeg">
+        <h3>Mop Giratório 140cm</h3>
+        <p>Limpeza prática, rápida e sem esforço.</p>
+        <a href="https://br.shp.ee/pbvcwn2?smtt=0.0.9" target="_blank" class="btn">Ver na Shopee</a>
+      </div>
+
+      <div class="card">
+        <img src="rodo.jpg.jpeg">
+        <h3>Rodo Esfregão 2 em 1</h3>
+        <p>Combinação perfeita entre escova e rodo para facilitar sua limpeza.</p>
+        <a href="https://br.shp.ee/sd7i25e?smtt=0.0.9" target="_blank" class="btn">Ver na Shopee</a>
+      </div>
+
+    </div>
   </div>
 
-  <!-- PRODUTO 2 -->
-  <div class="product">
-    <img src="fita.jpg.jpeg" alt="Produto 2">
-    <h2>Fita adesiva selante - fita de vedação</h2>
-    <p>Vedação firme e aprova de água kit com 5 rolos.</p>
-    <a href="https://br.shp.ee/dlrqwe9?smtt=0.0.9" target="_blank" class="btn">Ver na Shopee</a>
+  <!-- UTILIDADES -->
+  <div id="utilidades">
+    <h2 class="section-title">🛠 Utilidades</h2>
+    <div class="grid">
+
+      <div class="card">
+        <img src="fita.jpg.jpeg">
+        <h3>Fita Adesiva Selante</h3>
+        <p>Vedação firme e à prova d'água. Kit com 5 rolos.</p>
+        <a href="https://br.shp.ee/dlrqwe9?smtt=0.0.9" target="_blank" class="btn">Ver na Shopee</a>
+      </div>
+
+      <div class="card">
+        <img src="espremedor.jpeg">
+        <h3>Espremedor Elétrico de Frutas</h3>
+        <p>Faça sucos e batidas com muito mais praticidade.</p>
+        <a href="https://br.shp.ee/0awj2gl?smtt=0.0.9" target="_blank" class="btn">Ver na Shopee</a>
+      </div>
+
+    </div>
   </div>
 
-  <!-- PRODUTO 3 -->
-  <div class="product">
-    <img src="rodo.jpg.jpeg" alt="Produto 3">
-    <h2>Rodo de limpeza esfregão 2 em 1</h2>
-    <p>combinação perfeita entre escova e rodo, limpe sua casa com mais praticidade.</p>
-    <a href="https://br.shp.ee/sd7i25e?smtt=0.0.9" target="_blank" class="btn">Ver na Shopee</a>
-  </div>
-   
-  <!-- PRODUTO 4 -->
-  <div class="product">
-    <img src="espremedor.jpeg" alt="Produto 4">
-    <h2>Espremedor Elétrico Laranja Frutas </h2>
-    <p>Perfeito para fazer seus sucos e batidas com praticidade.</p>
-    <a href="https://br.shp.ee/0awj2gl?smtt=0.0.9" target="_blank" class="btn">Ver na Shopee</a>
-  </div>
 </div>
 
 <footer>
